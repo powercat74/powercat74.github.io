@@ -32,18 +32,18 @@ $(document).ready(function() {
 		
 		$(window).resize(function() {
 			$('div.info').height(window.innerHeight);
-			if( $('.contact').is(":visible") ) {
-				var innerHeight = $('.panel section').outerHeight();
-				if(innerHeight < 700) { innerHeight = 700};
-				var height = $('.panel section').length * innerHeight;
-				
-				if(window.innerWidth > 480) {
-					if(height <= 900) { height = 900; } 
-				} else {
-					if(height <= 1200) { height = 1200; } 
-				}		 
-				$('.contact').height(height);
-			}
+//			if( $('.contact').is(":visible") ) {
+//				var innerHeight = $('.panel section').outerHeight();
+//				if(innerHeight < 700) { innerHeight = 700};
+//				var height = $('.panel section').length * innerHeight;
+//				
+//				if(window.innerWidth > 480) {
+//					if(height <= 900) { height = 900; } 
+//				} else {
+//					if(height <= 1200) { height = 1200; } 
+//				}		 
+//				$('.contact').height(height);
+//			}
 		});
 	
 	
