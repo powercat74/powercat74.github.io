@@ -129,7 +129,7 @@ float:left;
 }
 header > span > a {
 text-indent:-9999px;
-background: url('../img/dustinhayes.png') no-repeat 0 0;
+background: url('/img/dustinhayes.png') no-repeat 0 0;
 display:block;
 width: 206px;
 height: 30px;
@@ -140,7 +140,7 @@ float: right;
 display:block;
 width: 24px;
 height: 20px;
-background: #3f3f3f url('../../img/contact.png') no-repeat center center;
+background: #3f3f3f url('..//img/contact.png') no-repeat center center;
 text-indent: -9999px;
 padding:2px;
 }
@@ -442,16 +442,16 @@ section.web {
 text-shadow: 1px 1px 2px #fff;
 }
 section.cornerstone {
-background: white url(../img/cpmg.jpg) no-repeat 0 0 fixed;
+background: white url(/img/cpmg.jpg) no-repeat 0 0 fixed;
 }
 section.occ {
-background: url(../img/occ.jpg) no-repeat 0 0 fixed;
+background: url(/img/occ.jpg) no-repeat 0 0 fixed;
 }
 section.dk {
-background: white url(../img/dk.jpg) no-repeat 0 0 fixed;
+background: white url(/img/dk.jpg) no-repeat 0 0 fixed;
 }
 .occ_light {
-background: url("../img/occ_light.png") no-repeat center 0;
+background: url("/img/occ_light.png") no-repeat center 0;
 width: 719px;
 height:310px;
 position: absolute;
@@ -459,7 +459,7 @@ right:0;
 bottom: 0;
 }
 .occ_fs {
-background: url("../img/occ_fs.png") no-repeat 0 0;
+background: url("/img/occ_fs.png") no-repeat 0 0;
 width: 534px;
 height:554px;
 position: absolute;
@@ -467,7 +467,7 @@ right:0;
 bottom: 0;
 }
 .occ_update {
-background: url("../img/occ_update.png") no-repeat 0 0;
+background: url("/img/occ_update.png") no-repeat 0 0;
 width: 611px;
 height:524px;
 position: absolute;
@@ -475,7 +475,7 @@ left:0;
 bottom: 0;
 }
 .dk_logo {
-background: url("../img/dk_logo.png") no-repeat 0 0;
+background: url("/img/dk_logo.png") no-repeat 0 0;
 width: 555px;
 height:422px;
 position: absolute;
@@ -483,7 +483,7 @@ left:0;
 bottom: 0;
 }
 .cpmg_logo {
-background: url("../img/cpmg_logo.png") no-repeat 0 0;
+background: url("/img/cpmg_logo.png") no-repeat 0 0;
 width: 1253px;
 height:440px;
 position: absolute;
@@ -491,7 +491,7 @@ right:0;
 bottom: 0;
 }
 .cpmg_map {
-background: url("../img/cpmg_map.png") no-repeat 0 0;
+background: url("/img/cpmg_map.png") no-repeat 0 0;
 width: 869px;
 height:766px;
 position: absolute;
@@ -499,7 +499,7 @@ left:50%;
 bottom: 0;
 }
 .cpmg_quote {
-background: url("../img/cpmg_quote.png") no-repeat 0 0;
+background: url("/img/cpmg_quote.png") no-repeat 0 0;
 width: 889px;
 height:559px;
 position: absolute;
@@ -547,17 +547,17 @@ section.design {
 text-shadow: 1px 1px 2px #fff;
 }
 section.timeline {
-background: black url(../img/t1.jpg) no-repeat 0 0 fixed;
+background: black url(/img/t1.jpg) no-repeat 0 0 fixed;
 }
 section.bulletins {
-background: white url(../img/bulletin.jpg) no-repeat 0 0 fixed;
+background: white url(/img/bulletin.jpg) no-repeat 0 0 fixed;
 }
 section.logos {
-background: #000 url(../img/logos.png) no-repeat center center fixed;
+background: #000 url(/img/logos.png) no-repeat center center fixed;
 }
 
 .timeline_1 {
-background: url("../img/timeline_1.png") no-repeat 0 0;
+background: url("/img/timeline_1.png") no-repeat 0 0;
 width: 413px;
 height:289px;
 position: absolute;
@@ -565,7 +565,7 @@ left:0;
 bottom: 0;
 }
 .timeline_2 {
-background: url("../img/timeline_2.png") no-repeat 0 0;
+background: url("/img/timeline_2.png") no-repeat 0 0;
 width: 599px;
 height:254px;
 position: absolute;
@@ -573,7 +573,7 @@ left:20%;
 bottom: 0;
 }
 .timeline_3 {
-background: url("../img/timeline_3.png") no-repeat 0 0;
+background: url("/img/timeline_3.png") no-repeat 0 0;
 width: 628px;
 height:313px;
 position: absolute;
@@ -581,7 +581,7 @@ right: -10%;
 bottom: 0;
 }
 .bulletin_recognize {
-background: url("../img/bulletin_recognize.png") no-repeat 0 0;
+background: url("/img/bulletin_recognize.png") no-repeat 0 0;
 width: 528px;
 height:551px;
 position: absolute;
@@ -589,7 +589,7 @@ left:0;
 bottom: 0;
 }
 .bulletin_intersecting {
-background: url("../img/bulletin_intersecting.png") no-repeat 0 0;
+background: url("/img/bulletin_intersecting.png") no-repeat 0 0;
 width: 572px;
 height:471px;
 position: absolute;
@@ -597,7 +597,7 @@ right:0;
 bottom: 0;
 }
 .bulletin_unbelievable {
-background: url("../img/bulletin_unbelievable.png") no-repeat 0 0;
+background: url("/img/bulletin_unbelievable.png") no-repeat 0 0;
 width: 598px;
 height:358px;
 position: absolute;
@@ -605,7 +605,7 @@ left: 20%;
 bottom: 0;
 }
 .bulletin_rapha {
-background: url("../img/bulletin_rapha.jpg") no-repeat 0 0;
+background: url("/img/bulletin_rapha.jpg") no-repeat 0 0;
 width: 500px;
 height:300px;
 position: absolute;
@@ -614,7 +614,7 @@ bottom: 200px;
 }
 
 .logos_go {
-background: url("../img/logos_go.png") no-repeat 0 0;
+background: url("/img/logos_go.png") no-repeat 0 0;
 width: 626px;
 height: 458px;
 position: absolute;
@@ -622,7 +622,7 @@ left:20%;
 bottom: 0;
 }
 .logos_sp {
-background: url("../img/logos_sp.png") no-repeat 0 0;
+background: url("/img/logos_sp.png") no-repeat 0 0;
 width: 452px;
 height: 307px;
 position: absolute;
@@ -631,7 +631,7 @@ bottom: 0;
 }
 
 .logos_kl {
-background: url("../img/logos_kl.png") no-repeat 0 0;
+background: url("/img/logos_kl.png") no-repeat 0 0;
 width: 404px;
 height: 329px;
 position: absolute;
@@ -639,7 +639,7 @@ left: 0;
 bottom: 0;
 }
 .logos_dc {
-background: url("../img/logos_dc.png") no-repeat 0 0;
+background: url("/img/logos_dc.png") no-repeat 0 0;
 width: 469px;
 height: 214px;
 position: absolute;
