@@ -1,0 +1,62 @@
+.app__project {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3rem 2rem;
+  @include breakpoint(tablet-l) {
+    flex-flow: row nowrap;
+  }
+  &:nth-child(odd) {
+    background-color: $gallery;
+  }
+  @include breakpoint(tablet-l) {
+    &:nth-child(even) {
+      .app__project__figure {
+        order: 2;
+      }
+      .app__project__content, .app__project__title {
+        text-align: right;
+      }
+    }
+  }
+  &__figure {
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 1rem;
+    @include breakpoint(tablet-l) {
+      flex-basis: 50%;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    border: 1px solid $snow-drift;
+  }
+  &__content {
+    flex: 1 1 100%;
+    padding: 1rem;
+    @include breakpoint(tablet-l) {
+      flex-basis: 50%;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-variation-settings: "wght" 100;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    @include breakpoint(tablet-l) {
+      text-align: left;
+      font-variation-settings: "wght" 1;
+    }
+  }
+  &__description {
+
+  }
+  &__categories {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-variation-settings: "wght" 100;
+  }
+}

@@ -1,0 +1,59 @@
+@import 'colors';
+@import 'breakpoints';
+@import 'fonts';
+@import 'typography';
+
+html,body {
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.app {
+  color: $friar-gray;
+  font-family: 'SF Display', Helvetica, Arial, sans-serif;
+  font-variation-settings: "wght" 1;
+  font-weight: 400;
+  width: 100%;
+  min-height: 100%;
+  &, * {
+    box-sizing: border-box;
+  }
+  p {
+    color: $friar-gray;
+  }
+  &__container {
+    min-height: calc(100vh - 70px);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+  }
+  &__section__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@keyframes transition {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// Page transtions
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity, transform;
+  transition-duration: .25s;
+}
+.fade-enter-active {
+  transition-delay: .25s;
+}
+.fade-enter, .fade-leave-active {
+  transform: translateY(-10vh);
+  opacity: 0;
+}

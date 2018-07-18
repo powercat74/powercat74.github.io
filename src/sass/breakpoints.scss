@@ -1,0 +1,43 @@
+$mobile-s: 360px;
+$mobile-m: 520px;
+$mobile-l: 620px;
+$tablet-s: 737px;
+$tablet-m: 900px;
+$tablet-l: 1000px;
+$desktop-s: 1023px;
+$desktop-l: 1224px;
+$tv-s: 1350px;
+$tv-m: 1440px;
+$tv-l: 1824px;
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$breakpoints: (
+  'screen-xs'     : $screen-xs,
+  'screen-sm'     : $screen-sm,
+  'screen-md'     : $screen-md,
+  'screen-lg'     : $screen-lg,
+  'mobile-s'      : $mobile-s,
+  'mobile-m'      : $mobile-m,
+  'mobile-l'      : $mobile-l,
+  'tablet-s'      : $tablet-s,
+  'tablet-m'      : $tablet-m,
+  'tablet-l'      : $tablet-l,
+  'desktop-s'     : $desktop-s,
+  'desktop-l'     : $desktop-l,
+  'tv-s'          : $tv-s,
+  'tv-l'          : $tv-l
+);
+@mixin breakpoint( $point ) {
+  @if map-has-key( $breakpoints, $point ) {
+    @media screen and (min-width: map-get($breakpoints, $point)) {
+      @content;
+    }
+  }
+  @else {
+    @warn "`#{$point}` is not a defined breakpoint.";
+  }
+}

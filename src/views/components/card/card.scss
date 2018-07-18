@@ -1,0 +1,49 @@
+.app__card {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  list-style-type: none;
+  border: 1px solid $snow-drift;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s;
+  text-decoration: none;
+  position: relative;
+  @include breakpoint(tablet-s) {
+    padding: 2rem;
+  }
+  &:hover, &:focus {
+    cursor: help;
+    background-color: $concrete;
+    .app__card__description {
+      opacity: 1;
+      transform: translateY(0rem);
+      visibility: visible;
+    }
+    .app__card__title {
+      transform: translateY(1rem);
+    }
+  }
+  &__title, &__description {
+    text-align: center;
+    font-size: 1rem;
+    flex: 1 1 calc(100% - 2rem);
+  }
+  &__title {
+    transition: opacity .2s, transform .2s;
+    transform: translateY(2rem);
+    visibility: visible;
+    font-variation-settings: "wght" 400;
+  }
+  &__description {
+    opacity: 0;
+    transition: opacity .3s, transform .3s;
+    transform: translateY(2rem);
+    visibility: hidden;
+    font-variation-settings: "wght" 200;
+  }
+}

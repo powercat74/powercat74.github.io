@@ -1,0 +1,6 @@
+.git/
+.settings/
+node_modules/
+.project
+.env
+*.log

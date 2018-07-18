@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'breakpoints';
+
+.app__traits {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 0;
+  @include breakpoint(tablet-s) {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include breakpoint(tablet-l) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include breakpoint(desktop-l) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @include breakpoint(tv-s) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @include breakpoint(tv-l) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

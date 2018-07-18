@@ -1,0 +1,40 @@
+.app__header {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  &__logo {
+    display: block;
+    flex: 1 1 auto;
+    text-decoration: none;
+    &__image {
+      width: 120px;
+      transition: width .2s;
+      @include breakpoint(tablet-s) {
+        width: 200px;
+      }
+    }
+  }
+  &__nav {
+    flex: 1 1 auto;
+    align-self: center;
+    text-align: right;
+    &__item {
+      text-transform: uppercase;
+      padding: 0 1rem;
+      transition: color .2s;
+      text-decoration: none;
+      &.active {
+        color: $red;
+      }
+      &:link, &:visited {
+        color: $friar-gray;
+      }
+      &:hover, &:active {
+        color: black;
+      }
+    }
+  }
+}
+.g__logo__highlight{
+  fill:$red;
+}

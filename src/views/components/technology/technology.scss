@@ -1,0 +1,26 @@
+.app__technology {
+  text-align: center;
+  &__link {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(100px, 2rem);
+    grid-gap: 0;
+    justify-items: stretch;
+    align-items: center;
+  }
+  &__image {
+    max-height: 140px;
+    max-width:100%;
+    @include breakpoint(desktop-s) {
+      transform: scale(.9) translate3d(0,0,0);
+      transition: transform .1s;
+      &:hover {
+        transform: scale(1) translate3d(0,0,0);
+      }
+    }
+  }
+  &__description {
+
+  }
+}
