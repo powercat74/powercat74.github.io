@@ -9,6 +9,8 @@ import copy from 'rollup-plugin-copy';
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
+import { terser } from 'rollup-plugin-terser';
+
 
 const plugins = [
   nodeResolve(),
@@ -20,7 +22,7 @@ const plugins = [
     routes: path.resolve('src/views/routes')
   }),
   scss({
-    output: 'public/css/application.css',
+    output: 'public/css/application.min.css',
     includePaths: ['src/sass/'],
     sourceMap: false,
     failOnError: true,
@@ -44,10 +46,8 @@ const plugins = [
   }),
   copy({
     'node_modules/vue/dist/vue.min.js': 'public/js/vue.min.js',
-    'node_modules/vue/dist/vue.js': 'public/js/vue.js',
-    'node_modules/vis/dist/vis.min.js': 'public/js/vis.min.js',
-    'node_modules/vis/dist/vis.min.css': 'public/css/vis.min.css',
   }),
+  terser(),
 ];
 
 // Include files to watch for rollup changes
@@ -63,7 +63,7 @@ export default [
   {
     input: 'src/js/application.js',
     output: {
-      file: 'public/legacy/js/application.js',
+      file: 'public/legacy/js/application.min.js',
       format: 'system',
       sourcemap: true,
     },
@@ -73,7 +73,7 @@ export default [
   {
     input: 'src/js/application.js',
     output: {
-      file: 'public/js/application.js',
+      file: 'public/js/application.min.js',
       format: 'es',
       sourcemap: true,
     },
