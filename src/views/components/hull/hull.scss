@@ -1,26 +1,3 @@
-.app__header {
-
-  &__nav {
-    flex: 1 1 auto;
-    align-self: center;
-    text-align: right;
-    &__item {
-      text-transform: uppercase;
-      padding: 0 1rem;
-      transition: color .2s;
-      text-decoration: none;
-      &:link, &:visited {
-        color: black;
-      }
-      &:hover, &:active {
-        color: black;
-      }
-    }
-  }
-}
-.g__logo__highlight{
-  fill:$red;
-}
 .app__footer {
   padding: 1rem;
   display: flex;
@@ -33,11 +10,8 @@
     padding: 1rem;
     transition: color .2s;
     text-decoration: none;
-    &.active {
-      color: $red;
-    }
     &:link, &:visited {
-      color: $friar-gray;
+      color: black;
     }
     &:hover, &:active {
       color: black;
