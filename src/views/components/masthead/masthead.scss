@@ -29,7 +29,7 @@
       &:hover, &:active {
         color: black;
       }
-      &.router-link-active {
+      &:link.router-link-active {
         color: $red;
       }
     }
