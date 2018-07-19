@@ -23,14 +23,14 @@
       padding: 0 1rem;
       transition: color .2s;
       text-decoration: none;
-      &.active {
-        color: $red;
-      }
       &:link, &:visited {
-        color: $friar-gray;
+        color: black;
       }
       &:hover, &:active {
         color: black;
+      }
+      &.router-link-active {
+        color: $red;
       }
     }
   }
