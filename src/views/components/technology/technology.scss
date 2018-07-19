@@ -15,7 +15,7 @@
     @include breakpoint(desktop-s) {
       transform: scale(.9) translate3d(0,0,0);
       transition: transform .1s;
-      &:hover {
+      &:hover, &:focus {
         transform: scale(1) translate3d(0,0,0);
       }
     }
