@@ -1,6 +1,6 @@
 <template>
 <ul class="app__technologies">
-  <technology v-for="tech in technologies" v-bind="tech"></technology>
+  <technology v-for="tech in technologies" v-bind="tech" :key="name"></technology>
 </ul>
 </template>
 
